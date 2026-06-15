@@ -1,1 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>NovaX Space</title>
 
+  <link rel="stylesheet" href="style.css">
+
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+<div class="hero-bg"></div>
+
+<div class="container">
+
+    <div class="logo-box">
+        <h1>NovaX Space</h1>
+        <p>Future Space Intelligence Platform</p>
+    </div>
+
+    <div class="glass-card">
+
+        <div class="tab-buttons">
+            <button id="loginTab" class="active" onclick="showLogin()">
+                Login
+            </button>
+
+            <button id="signupTab" onclick="showSignup()">
+                Register
+            </button>
+        </div>
+
+        <!-- Login -->
+        <div id="loginForm">
+
+            <h2>Welcome Back</h2>
+
+            <input type="email" placeholder="Email" id="loginEmail">
+
+            <input type="password" placeholder="Password" id="loginPassword">
+
+            <button class="main-btn">
+                Login
+            </button>
+
+        </div>
+
+        <!-- Register -->
+        <div id="signupForm" style="display:none;">
+
+            <h2>Create Account</h2>
+
+            <input type="text" placeholder="Full Name">
+
+            <input type="email" placeholder="Email">
+
+            <input type="password" placeholder="Password">
+
+            <button class="main-btn green">
+                Register
+            </button>
+
+        </div>
+
+    </div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
